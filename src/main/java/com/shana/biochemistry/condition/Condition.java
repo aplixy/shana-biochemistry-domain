@@ -16,11 +16,10 @@ import org.hibernate.validator.constraints.NotEmpty;
 public class Condition implements Serializable{
 
 	
-
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = 1345290714291027384L;
+	private static final long serialVersionUID = 4143765457762727720L;
 
 	@Id
 	@Column(name="id",length=64)

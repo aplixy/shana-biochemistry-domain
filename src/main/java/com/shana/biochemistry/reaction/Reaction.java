@@ -1,13 +1,24 @@
 package com.shana.biochemistry.reaction;
 
+import java.io.Serializable;
+
 import javax.persistence.Column;
+import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 
 import org.hibernate.validator.constraints.NotEmpty;
 
-public class Reaction {
+@Entity
+@Table(name="bioc_reaction_t")
+public class Reaction implements Serializable{
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 7553095633582030530L;
+
 	@Id
 	@Column(name="id",length=64)
 	private String id;
